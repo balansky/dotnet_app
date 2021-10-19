@@ -1,0 +1,36 @@
+{
+  "name": "react_client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "vscode:prepublish": "webpack --mode production",
+    "webpack": "webpack --mode development",
+    "webpack-dev": "webpack --mode development --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-transform-react-constant-elements": "^7.14.5",
+    "@babel/plugin-transform-react-inline-elements": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "css-loader": "^6.4.0",
+    "mini-css-extract-plugin": "^2.4.2",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.15.4",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

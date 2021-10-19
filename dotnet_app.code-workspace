@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "dotnet_mvc"
+		},
+		{
+			"path": "react_client"
+		}
+	],
+	"settings": {
+		"files.autoSave": "afterDelay",
+		"editor.minimap.enabled": false
+	}
+}
