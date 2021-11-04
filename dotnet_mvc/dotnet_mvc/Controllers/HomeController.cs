@@ -20,7 +20,8 @@ namespace dotnet_mvc.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            ViewData["Title"] = "home";
+            return View("Default");
         }
 
         public IActionResult Privacy()

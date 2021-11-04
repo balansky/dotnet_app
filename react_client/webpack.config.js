@@ -9,7 +9,7 @@ module.exports = function(_env, argv) {
   return {
     devtool: isDevelopment && 'cheap-module-source-map',
     entry: {
-        home: './src/home/index.js'
+        home: './src/pages/home/index.js'
     },
     output: {
         filename: '[name].bundle.js',
@@ -42,10 +42,9 @@ module.exports = function(_env, argv) {
         extensions: [".js", ".jsx"]
     },
     plugins: [
-        isProduction && new MiniCssExtractPlugin({
-            filename: 'css/[name].css',
-            chunkFilename: "css/[name].chunk.css"
-        })
-    ].filter(Boolean)
+        new MiniCssExtractPlugin({
+            filename: ({ chunk }) => `${chunk.name.replace("/js/", "/css/")}.css`,
+        }),
+    ]
   };
 };

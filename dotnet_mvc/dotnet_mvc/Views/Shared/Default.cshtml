@@ -1,0 +1,8 @@
+@{
+    ViewData["Script"] = "~/js/" + ViewData["Title"] + ".bundle.js";
+    ViewData["RootId"] = ViewData["Title"] + "-root";
+}
+
+<div class="text-center">
+    <div id='@ViewData["RootId"]'></div>
+</div>
